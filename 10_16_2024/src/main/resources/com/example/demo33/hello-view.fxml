@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo33.HelloController">
+    <TextField prefHeight="58.0" prefWidth="600.0" promptText="hh" style="-fx-background-color: #7FFF7F;" text="BMI calculator">
+        <font>
+          <Font name="Berlin Sans FB" size="24.0" />
+        </font>
+    </TextField>
+    <TextField layoutX="42.0" layoutY="81.0" prefHeight="58.0" prefWidth="355.0" promptText="gg" style="-fx-background-color: #7FFF7F;" text="Weight">
+        <font>
+          <Font name="Berlin Sans FB" size="24.0" />
+        </font>
+    </TextField>
+    <TextField layoutX="42.0" layoutY="154.0" prefHeight="58.0" prefWidth="355.0" style="-fx-background-color: #7FFF7F;" text="Height">
+        <font>
+          <Font name="Berlin Sans FB" size="24.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="weight" layoutX="144.0" layoutY="94.0" prefHeight="32.0" prefWidth="236.0" />
+    <TextField fx:id="height" layoutX="144.0" layoutY="167.0" prefHeight="32.0" prefWidth="236.0" />
+    <Button layoutX="424.0" layoutY="121.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="67.0" prefWidth="162.0" style="-fx-background-color: #87CEFA;" text="Get Result">
+        <font>
+          <Font size="25.0" />
+        </font>
+    </Button>
+    <Label fx:id="label2" layoutX="40.0" layoutY="260.0" prefHeight="83.0" prefWidth="539.0" style="-fx-background-color: #7FFF7F;">
+        <font>
+          <Font size="26.0" />
+        </font>
+    </Label>
+</AnchorPane>
