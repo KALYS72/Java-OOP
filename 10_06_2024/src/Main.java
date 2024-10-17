@@ -1,3 +1,5 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         StringProcessor sp = new StringProcessor();
@@ -17,7 +19,7 @@ public class Main {
         System.out.println(sp.calculateWords("Counting  multiple  spaces"));
         System.out.println(sp.calculateWords("hello world"));
         System.out.println(sp.calculateWords("   leading and trailing   "));
-        System.out.println(sp.calculateExpression("3+5")); 
+        System.out.println(sp.calculateExpression("3+5"));
         System.out.println(sp.calculateExpression("10+2*6"));
         System.out.println(sp.calculateExpression("100*2+12"));
         System.out.println(sp.calculateExpression("100*(2+12)"));

@@ -9,7 +9,7 @@ public class StringProcessor {
                 lower = true;
             } else if (Character.isDigit(c)) {
                 digit = true;
-            } else if (!Character.isLetterOrDigit(c)) {  
+            } else if (!Character.isLetterOrDigit(c)) {  // Checking special characters
                 special = true;
             }
         }
