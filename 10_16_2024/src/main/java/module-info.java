@@ -1,9 +1,8 @@
-module com.example.demo33 {
+module org.example.bmi {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires com.almasb.fxgl.all;
 
-    opens com.example.demo33 to javafx.fxml;
-    exports com.example.demo33;
+    opens org.example.bmi to javafx.fxml;
+    exports org.example.bmi;
 }

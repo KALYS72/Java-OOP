@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="779.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bmi.HelloController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="779.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onExit" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#clearFields" text="Clear" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onHelp" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="264.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI Calculator">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+      </Text>
+      <VBox layoutX="144.0" layoutY="125.0" prefHeight="101.0" prefWidth="251.0">
+         <children>
+            <TextField fx:id="height" prefHeight="42.0" prefWidth="184.0" promptText="Height">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="weight" prefHeight="39.0" prefWidth="138.0" promptText="Weight">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button layoutX="479.0" layoutY="154.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="43.0" prefWidth="109.0" text="Calculate">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="297.0" layoutY="249.0" prefHeight="39.0" prefWidth="175.0" text="Your BMI should be here">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="144.0" layoutY="308.0" prefHeight="47.0" prefWidth="581.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
