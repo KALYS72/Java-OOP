@@ -36,10 +36,10 @@ public class HelloController implements Initializable {
     ObservableList<Device> devices = FXCollections.observableArrayList();
 
     @FXML
-    private TextField name;
+    private TextField namet, names, namel;
 
     @FXML
-    private TextField price;
+    private TextField pricet, pricel, prices;
 
     @FXML
     private TextField processor;
@@ -57,7 +57,7 @@ public class HelloController implements Initializable {
     private Tab tabletTab;
 
     @FXML
-    private TextField weight;
+    private TextField weightt, weightl, weights;
 
     @FXML
     private Label label;
@@ -83,21 +83,22 @@ public class HelloController implements Initializable {
         Tab selectedTab = tabPane.getSelectionModel().getSelectedItem();
 
         if (selectedTab.getText().equals("Smartphone")) {
-            Smartphone sm = new Smartphone();
-            name.getText();
-            Double.parseDouble(price.getText());
-            Double.parseDouble(weight.getText());
-            Integer.parseInt(screenSize.getText());
-            Integer.parseInt(cameraRes.getText());
+            Smartphone sm = new Smartphone(
+                names.getText(),
+                Double.parseDouble(prices.getText()),
+                Double.parseDouble(weights.getText()),
+                Integer.parseInt(screenSize.getText()),
+                Integer.parseInt(cameraRes.getText())
+            );
             devices.add(sm);
         }
 
         if (selectedTab.getText().equals("Laptop")) {
             Laptop lp = new Laptop(
                     Type.LAPTOP,
-                    name.getText(),
-                    Double.parseDouble(price.getText()),
-                    Double.parseDouble(weight.getText()),
+                    namel.getText(),
+                    Double.parseDouble(pricel.getText()),
+                    Double.parseDouble(weightl.getText()),
                     Integer.parseInt(ram.getText()),
                     processor.getText()
             );
@@ -108,9 +109,9 @@ public class HelloController implements Initializable {
         if (selectedTab.getText().equals("Tablet")) {
             Tablet tb = new Tablet(
                     Type.TABLET,
-                    name.getText(),
-                    Double.parseDouble(price.getText()),
-                    Double.parseDouble(weight.getText()),
+                    namet.getText(),
+                    Double.parseDouble(pricet.getText()),
+                    Double.parseDouble(weightt.getText()),
                     Double.parseDouble(batteryLife.getText()),
                     hasStylus.isSelected()
             );

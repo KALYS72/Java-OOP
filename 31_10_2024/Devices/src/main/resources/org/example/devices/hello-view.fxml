@@ -15,7 +15,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.devices.HelloController">
    <children>
-      <TabPane prefHeight="306.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane fx:id="tabPane" prefHeight="306.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab fx:id="laptopTab" text="Laptop">
             <content>
@@ -39,7 +39,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="name" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="namel" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
                               <Label prefHeight="45.0" prefWidth="64.0" text="Price" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="24.0" />
@@ -60,8 +60,8 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="price" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="weight" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="pricel" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="weightl" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <TextField fx:id="ram" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                               <TextField fx:id="processor" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                            </children>
@@ -92,7 +92,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="name" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="names" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
                               <Label prefHeight="45.0" prefWidth="64.0" text="Price" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="24.0" />
@@ -113,8 +113,8 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="price" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="weight" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="prices" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="weights" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <TextField fx:id="screenSize" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                               <TextField fx:id="cameraRes" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                            </children>
@@ -143,7 +143,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="name" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="namet" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" />
                               <Label prefHeight="45.0" prefWidth="64.0" text="Price" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="24.0" />
@@ -159,8 +159,8 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="price" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="weight" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="pricet" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="weightt" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <TextField fx:id="batteryLife" prefHeight="50.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
